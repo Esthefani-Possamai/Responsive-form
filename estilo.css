@@ -1,3 +1,4 @@
+<<<<<<< HEAD
         /*adicionar link com as fontes que quero*/
     
     @import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Red+Hat+Mono&display=swap');
@@ -221,3 +222,10 @@
         .gender-input {
             margin-top: 0.5rem;
         }
+=======
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+font-family: 'DotGothic16', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Red+Hat+Mono&display=swap');
+font-family: 'Red Hat Mono', monospace;
+>>>>>>> c180dc8990b18131dff4f072078073d4ee701437
