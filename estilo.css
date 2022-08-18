@@ -1,239 +1,247 @@
-        <<<<<<< HEAD
-    /*adicionar link com as fontes que quero*/
+    <<<<<<< HEAD
+/*adicionar link com as fontes que quero*/
+
+
+* {
+    /* *pois quero selecionar toda a página*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    /*largura da tela toda*/
+    height: 100vh;
+    /*altura da tela toda*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*escolher a cor de fundo*/
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container {
+    width: 80%;
+    height: 80vh;
+    /*vh significa altura da janela de visualização*/
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(92, 89, 89, 0.623);
+    /*para fazer a sombra nas bordas do container*/
+}
+
+.form-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7e9f82;
+    padding: 1rem;
+}
+
+.form-image img {
+    width: 30rem;
+    height: 30rem;
+}
+
+.form {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column background-color: /*escolher a cor da parte da imagem*/
+    ;
+    padding: 3rem;
+}
+
+.form-header {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: 100%;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 0.2rem;
+    color: #c69682;
+}
+
+.login-botton button {
+    border: none;
+    width: 7rem;
+    background-color: #c69682;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/*para quando passar o mouse emcima ele troque de cor*/
+
+.login-botton button:hover {
+    background-color: #7e9f82;
+}
+/*para alterar a fonte do texto do botão*/
+
+.login-botton button a {
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-family: 'Quicksand', sans-serif;
+}
+/*Adicionar linha decorativa*/
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.2rem;
+    background-color: #7e9f82;
+    margin-top: 0.3rem;
+    position: absolute;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    /*deixar um do lado do outro*/
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #c69682;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.input-box input:hover {
+    background-color: #c6968242;
+}
+
+.input-box input::focus-visible {
+    outline: 1px solid #c69682;
+}
+/*alterar os textos dos inputs*/
+
+.input-box label,
+{
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.gender-title h6 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.input-box input::placeholder {
+    color:  #000000;
+}
+
+.gender-group {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.62rem;
+    padding: 0 0.5rem;
+}
+
+.gender-inputs {
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.gender-input {
+    display: flex;
+    align-items: center;
+}
+
+.gender-input input {
+    margin-right: 0.35rem;
     
-    @import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Red+Hat+Mono&display=swap');
-    * {
-        /* *pois quero selecionar toda a página*/
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        font-family: 'Red Hat Mono', monospace;
-    }
+}
+
+.gender-input label {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
     
-    body {
-        width: 100%;
-        /*largura da tela toda*/
-        height: 100vh;
-        /*altura da tela toda*/
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: ;
-        /*escolher a cor de fundo*/
-    }
-    
-    .container {
-        width: 80%;
-        height: 80vh;
-        /*vh significa altura da janela de visualização*/
-        display: flex;
-        box-shadow: 5px 5px 10px #c69682;
-        /*para fazer a sombra nas bordas do container*/
-    }
-    
+
+}
+
+.continue-botton button {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    padding: 0.62rem;
+    background-color: #c69682;
+    border-radius: 5px;
+    cursor: pointer;
+    /*para ficar a mãozinha ao invés do cursor*/
+}
+
+.continue-botton button:hover {
+    background-color: #7e9f82;
+}
+
+.continue-botton button a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+/*deixar o formulário responsivo com media query*/
+
+@media screen and (max-width: 1330px) {
     .form-image {
+        display: none;
+    }
+    .container {
         width: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #7e9f82;
-        padding: 1rem;
     }
-    
-    .form-image img {
-        width: 30rem;
-        height: 30rem;
-    }
-    
     .form {
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column background-color: /*escolher a cor da parte da imagem*/
-        ;
-        padding: 3rem;
-    }
-    
-    .form-header {
-        margin-bottom: 1rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .title {
-        font-size: 100%;
-        margin-bottom: 0.2rem;
-        color: #c69682;
-    }
-    
-    .login-botton button {
-        border: none;
-        width: 7rem;
-        background-color: #c69682;
-        padding: 0.4rem 1rem;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-    /*para quando passar o mouse emcima ele troque de cor*/
-    
-    .login-botton button:hover {
-        background-color: #7e9f82;
-    }
-    /*para alterar a fonte do texto do botão*/
-    
-    .login-botton button a {
-        text-decoration: none;
-        font-weight: 500;
-        color: #000;
-    }
-    /*Adicionar linha decorativa*/
-    
-    .form-header h1::after {
-        content: '';
-        display: block;
-        width: 5rem;
-        height: 0.2rem;
-        background-color: #7e9f82;
-        margin-top: 0.3rem;
-        position: absolute;
-    }
-    
-    .input-group {
-        display: flex;
-        flex-wrap: wrap;
-        /*deixar um do lado do outro*/
-        justify-content: space-between;
-        padding: 1rem 0;
-    }
-    
-    .input-box {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 1.1rem;
-    }
-    
-    .input-box input {
-        margin: 0.6rem 0;
-        padding: 0.8rem 1.2rem;
-        border: none;
-        border-radius: 10px;
-        box-shadow: 1px 1px 6px #c69682;
-        ;
-    }
-    
-    .input-box input:hover {
-        background-color: #c696828c;
-    }
-    
-    .input-box input::focus-visible {
-        outline: 1px solid #c69682;
-    }
-    /*alterar os textos dos inputs*/
-    
-    .input-box label,
-    {
-        font-size: 0.75rem;
-        font-weight: 600;
-        color: green;
-    }
-    
-    .gender-title h6 {
-        font-size: 0.75rem;
-        font-weight: 600;
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
-    }
-    
-    .input-box input::placeholder {
-        color: green;
-    }
-    
-    .gender-group {
-        display: flex;
-        justify-content: space-between;
-        margin: 0.62rem;
-        padding: 0 0.5rem;
-    }
-    
-    .gender-inputs {
-        isplay: flex;
-        align-items: center;
-    }
-    
-    .gender-input {
-        display: flex;
-        align-items: center;
-    }
-    
-    .gender-input input {
-        margin-right: 0.35rem;
-    }
-    
-    .gender-input label {
-        font-size: 0.80rem;
-        font-weight: 600;
-        color: green;
-    }
-    
-    .continue-botton button {
         width: 100%;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        border: none;
-        padding: 0.62rem;
-        background-color: #c69682;
-        border-radius: 5px;
-        cursor: pointer;
-        /*para ficar a mãozinha ao invés do cursor*/
     }
-    
-    .continue-botton button:hover {
-        background-color: #7e9f82;
+}
+
+@media screen and (max-width: 1064px) {
+    .container {
+        width: 90%;
+        height: auto;
     }
-    
-    .continue-botton button a {
-        text-decoration: none;
-        font-size: 0.93rem;
-        font-weight: 500;
-        color: white;
+    /*adicionar uma scroll*/
+    .input-group {
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+        /*não ficar um do lado do outro*/
+        max-height: 15rem;
+        padding-right: 5rem;
+        padding-left: 1rem;
     }
-    /*deixar o formulário responsivo com media query*/
-    
-    @media screen and (max-width: 1330px) {
-        .form-image {
-            display: none;
-        }
-        .container {
-            width: 50%;
-        }
-        .form {
-            width: 100%;
-        }
+    .gender-inputs {
+        margin-top: 2rem;
     }
-    
-    @media screen and (max-width: 1064px) {
-        .container {
-            width: 90%;
-            height: auto;
-        }
-        /*adicionar uma scroll*/
-        .input-group {
-            flex-direction: column;
-            overflow-y: scroll;
-            flex-wrap: nowrap;
-            /*não ficar um do lado do outro*/
-            max-height: 15rem;
-            padding-right: 5rem;
-            padding-left: 1rem;
-        }
-        .gender-inputs {
-            margin-top: 2rem;
-        }
-        .gender-group {
-            flex-direction: column;
-        }
-        .gender-input {
-            margin-top: 0.5rem;
-        }
+    .gender-group {
+        flex-direction: column;
+    }
+    .gender-input {
+        margin-top: 0.5rem;
+    }
