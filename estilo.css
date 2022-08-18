@@ -1,9 +1,6 @@
     <<<<<<< HEAD
-/*adicionar link com as fontes que quero*/
-
 
 * {
-    /* *pois quero selecionar toda a página*/
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -11,23 +8,18 @@
 
 body {
     width: 100%;
-    /*largura da tela toda*/
     height: 100vh;
-    /*altura da tela toda*/
     display: flex;
     justify-content: center;
     align-items: center;
-    /*escolher a cor de fundo*/
     font-family: 'Quicksand', sans-serif;
 }
 
 .container {
-    width: 80%;
-    height: 80vh;
-    /*vh significa altura da janela de visualização*/
+    width: 90%;
+    height: 90vh;
     display: flex;
     box-shadow: 5px 5px 10px rgba(92, 89, 89, 0.623);
-    /*para fazer a sombra nas bordas do container*/
 }
 
 .form-image {
@@ -49,8 +41,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column background-color: /*escolher a cor da parte da imagem*/
-    ;
+    flex-direction: column;
     padding: 3rem;
 }
 
@@ -76,12 +67,10 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
-/*para quando passar o mouse emcima ele troque de cor*/
 
 .login-botton button:hover {
     background-color: #7e9f82;
 }
-/*para alterar a fonte do texto do botão*/
 
 .login-botton button a {
     font-size: 16px;
@@ -90,7 +79,6 @@ body {
     color: rgb(255, 255, 255);
     font-family: 'Quicksand', sans-serif;
 }
-/*Adicionar linha decorativa*/
 
 .form-header h1::after {
     content: '';
@@ -105,7 +93,6 @@ body {
 .input-group {
     display: flex;
     flex-wrap: wrap;
-    /*deixar um do lado do outro*/
     justify-content: space-between;
     padding: 1rem 0;
 }
@@ -132,7 +119,6 @@ body {
 .input-box input::focus-visible {
     outline: 1px solid #c69682;
 }
-/*alterar os textos dos inputs*/
 
 .input-box label,
 {
@@ -151,7 +137,7 @@ body {
 }
 
 .input-box input::placeholder {
-    color:  #000000;
+    color: #000000;
 }
 
 .gender-group {
@@ -180,8 +166,6 @@ body {
     font-size: 16px;
     font-weight: 500;
     color: rgb(0, 0, 0);
-    
-
 }
 
 .continue-botton button {
@@ -193,7 +177,6 @@ body {
     background-color: #c69682;
     border-radius: 5px;
     cursor: pointer;
-    /*para ficar a mãozinha ao invés do cursor*/
 }
 
 .continue-botton button:hover {
@@ -207,7 +190,6 @@ body {
     color: white;
     font-family: 'Quicksand', sans-serif;
 }
-/*deixar o formulário responsivo com media query*/
 
 @media screen and (max-width: 1330px) {
     .form-image {
@@ -226,12 +208,10 @@ body {
         width: 90%;
         height: auto;
     }
-    /*adicionar uma scroll*/
     .input-group {
         flex-direction: column;
         overflow-y: scroll;
         flex-wrap: nowrap;
-        /*não ficar um do lado do outro*/
         max-height: 15rem;
         padding-right: 5rem;
         padding-left: 1rem;
