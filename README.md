@@ -5,8 +5,11 @@
 </div>
 
 <div>
- <p><em>🔭 Este repositório conta com um formulário de cadastro desenvolvido em HTML e CSS + de maneira responsiva :) </em></p>
- <img  height="392" src="https://cdn.discordapp.com/attachments/762488898597158925/1010198700464820305/unknown.png"/>
+ <p>
+ <em>🔭 Este repositório conta com um formulário de cadastro desenvolvido em HTML e CSS + de maneira responsiva :) </em>
+ </p>
+ <img height="10%" src="https://cdn.discordapp.com/attachments/762488898597158925/1010198700464820305/unknown.png"/>
+ 
 </div>
   
 ##
