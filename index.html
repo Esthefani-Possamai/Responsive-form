@@ -10,7 +10,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
     </style>
-    <script defer type="text/javascript" src="js/mascaras.js"></script>
+    <script defer type="text/javascript" src="js/scripts.js"></script>
     <title>Cadastro</title>
 </head>
 
@@ -56,6 +56,18 @@
                     <div class="input-box">
                         <label for="data_cadastro">data cadastro</label>
                         <input id="data" type="text" name="data_cadastro" placeholder="xx/xx/xxxx" maxlength="8" onblur="mascara_data()" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="modelo">Modelo de Comercio</label>
+                        <select name="modelo" id="modelo"> 
+                            <option>selecione</option>
+                            <option value="Mercado">mercado</option>
+                            <option value="Escola">Escola</option>
+                            <option value="Outros" onselect="esconder()">Outros</option>
+                        </select>
+
+                        <input id="outros" type="text" name="modelo" placeholder="Outros">
                     </div>
                     
                 </div>

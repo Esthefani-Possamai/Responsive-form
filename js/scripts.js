@@ -33,3 +33,18 @@ function mascara_data(){
     data.value = data.value.replace(/^(\d{2})(\d{2})(\d{4})/, "$1/$2/$3");
 
 }
+
+//ESCONDER IMPUT OUTROS ENQUANTO OUTROS NÃO TIVER SELECIONADO NO SELECT MODELO
+
+function esconder(){
+    var modelo = document.querySelector('#modelo')
+    var outros = document.querySelector('#outros')
+
+    if(modelo.value === "Outros"){
+        outros.style.display = 'block';
+    }else{
+        outros.style.display = 'none';
+    }
+}
+
+esconder()
