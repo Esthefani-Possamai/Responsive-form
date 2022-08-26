@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="css/estilo.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
     </style>
+    <script defer type="text/javascript" src="js/mascaras.js"></script>
     <title>Cadastro</title>
 </head>
 
@@ -22,10 +23,7 @@
             <form>
                 <div class="form-header">
                     <div class="title">
-                        <h1>Cadastre-se</h1>
-                    </div>
-                    <div class="login-botton">
-                        <button><a href="#">Acessar</a></button>
+                        <h1>Cadastro de Cliente</h1>
                     </div>
                 </div>
 
@@ -36,8 +34,8 @@
                     </div>
 
                     <div class="input-box">
-                        <label for="lastname">Sobrenome</label>
-                        <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+                        <label for="cpf_cnpj">CPF_CNPJ</label>
+                        <input id="cpf_cnpj" type="text" name="cpf_cnpj" placeholder="xx.xxx.xxx/xxxx-xx" maxlength="14" onblur="mascara_cpf_cnpj()" required>
                     </div>
 
                     <div class="input-box">
@@ -46,19 +44,20 @@
                     </div>
 
                     <div class="input-box">
-                        <label for="celular">Celular</label>
-                        <input id="celular" type="number" name="celular" placeholder="(xx) xxxxx-xxxx" required>
+                        <label for="fone">Celular</label>
+                        <input id="fone" type="text" name="fone" placeholder="(xx) xxxxx-xxxx" maxlength="11" onblur="mascara_fone()" required>
                     </div>
 
                     <div class="input-box">
-                        <label for="password">Senha</label>
-                        <input id="password" type="password" name="password" placeholder="Defina uma senha" required>
+                        <label for="responsavel">Responsavel</label>
+                        <input id="responsavel" type="" name="responsavel" placeholder="Digite o responsavel" required>
                     </div>
 
                     <div class="input-box">
-                        <label for="password">Confirmar senha</label>
-                        <input id="password" type="password" name="confirmpassword" placeholder="Defina uma senha" required>
+                        <label for="data_cadastro">data cadastro</label>
+                        <input id="data" type="text" name="data_cadastro" placeholder="xx/xx/xxxx" maxlength="8" onblur="mascara_data()" required>
                     </div>
+                    
                 </div>
 
                 <div class="gender-inputs">
