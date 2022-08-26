@@ -1,4 +1,5 @@
 
+//MASCARA PARA CPF E CNPJ NO MESMO CAMPO
 
 function mascara_cpf_cnpj(){
     var cpf_cnpj = document.querySelector('#cpf_cnpj')
@@ -16,12 +17,15 @@ function mascara_cpf_cnpj(){
 
 }
 
+//MASCARA TELEFONE
 
 function mascara_fone(){
     var fone = document.querySelector('#fone')
 
     fone.value = fone.value.replace(/^(\d{2})(\d{1})(\d{4})(\d{4})/, "($1) $2 $3-$4");
 }
+
+//MASCARA DATA
 
 function mascara_data(){
     var data = document.querySelector('#data')
