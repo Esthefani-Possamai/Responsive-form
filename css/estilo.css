@@ -112,11 +112,28 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
+.input-box select {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #c69682;
+    font-family: 'Quicksand', sans-serif;
+}
+
 .input-box input:hover {
     background-color: #c6968242;
 }
 
+.input-box select:hover {
+    background-color: #c6968242;
+}
+
 .input-box input::focus-visible {
+    outline: 1px solid #c69682;
+}
+
+.input-box select::focus-visible {
     outline: 1px solid #c69682;
 }
 
@@ -138,6 +155,14 @@ body {
 
 .input-box input::placeholder {
     color: #000000;
+}
+
+.input-box select::placeholder {
+    color: #000000;
+}
+
+#outros{
+    display: none;
 }
 
 .gender-group {
@@ -168,6 +193,7 @@ body {
     color: rgb(0, 0, 0);
 }
 
+
 .continue-botton button {
     width: 100%;
     margin-top: 1rem;
@@ -191,9 +217,7 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
-#outros{
-    display: none;
-}
+
 
 @media screen and (max-width: 1330px) {
     .form-image {
