@@ -60,11 +60,11 @@
 
                     <div class="input-box">
                         <label for="modelo">Modelo de Comercio</label>
-                        <select name="modelo" id="modelo"> 
+                        <select name="modelo" id="modelo" onchange="esconder()"> 
                             <option>selecione</option>
                             <option value="Mercado">mercado</option>
                             <option value="Escola">Escola</option>
-                            <option value="Outros" onselect="esconder()">Outros</option>
+                            <option value="Outros">Outros</option>
                         </select>
 
                         <input id="outros" type="text" name="modelo" placeholder="Outros">

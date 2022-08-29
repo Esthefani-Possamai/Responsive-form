@@ -191,6 +191,10 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
+#outros{
+    display: none;
+}
+
 @media screen and (max-width: 1330px) {
     .form-image {
         display: none;
@@ -225,3 +229,4 @@ body {
     .gender-input {
         margin-top: 0.5rem;
     }
+
